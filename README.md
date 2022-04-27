@@ -58,3 +58,11 @@ Spark由Scala语言开发的，所以接下来的开发所使用的语言也为S
 </build>
 ```
 
+#### 1.3 运行第一个Spark程序
+在执行程序之前，你需要：
+1. 在根目录下创建input文件夹，创建 words.txt 文本文件，并写入一些单词，单词与单词之间使用空格隔开；
+2. 为了防止程序报错，你应该在windows环境提前准备好winutils.exe文件，并提前设置好HADOOP_HOME环境变量；
+3. 为了更好能看到结果，最好将日志级别设置为ERROR；[设置日志级别](https://github.com/Erosennines/spark3.0/blob/master/src/main/resources/log4j.properties)
+
+以上步骤准备好后，就可以尝试编写第一个Spark代码：[wordcount](https://github.com/Erosennines/spark3.0/blob/master/src/main/java/com/spark/day01/Day01_01_WordCount.scala)
+
